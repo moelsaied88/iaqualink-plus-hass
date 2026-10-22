@@ -1,0 +1,18 @@
+{
+  "domain": "iaqualink_plus",
+  "name": "iAquaLink Plus (Salt Cell)",
+  "codeowners": [
+    "@moelsaied88"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "iaqualink"
+  ],
+  "documentation": "https://github.com/moelsaied88/iaqualink-plus-hass",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0",
+  "issue_tracker": "https://github.com/moelsaied88/iaqualink-plus-hass/issues"
+}

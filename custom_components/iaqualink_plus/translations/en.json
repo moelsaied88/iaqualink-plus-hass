@@ -1,0 +1,92 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "iAquaLink salt cell",
+        "description": "Adds salt cell output, boost, and status entities using your existing Jandy iAquaLink login. No credentials needed."
+      }
+    },
+    "abort": {
+      "core_missing": "Set up the Jandy iAquaLink integration first.",
+      "single_instance_allowed": "Already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "pool_output": {
+        "name": "Pool output"
+      },
+      "pool_status": {
+        "name": "Pool status",
+        "state": {
+          "standby": "Standby",
+          "running": "Running",
+          "boosting": "Boosting",
+          "boostpaused": "Boost paused",
+          "offline": "Offline",
+          "unknown": "Unknown"
+        }
+      },
+      "spa_output": {
+        "name": "Spa output"
+      },
+      "spa_status": {
+        "name": "Spa status",
+        "state": {
+          "standby": "Standby",
+          "running": "Running",
+          "boosting": "Boosting",
+          "boostpaused": "Boost paused",
+          "offline": "Offline",
+          "unknown": "Unknown"
+        }
+      },
+      "salinity": {
+        "name": "Salinity"
+      },
+      "boost_status": {
+        "name": "Boost status",
+        "state": {
+          "off": "Off",
+          "on": "On",
+          "paused": "Paused"
+        }
+      },
+      "boost_remaining": {
+        "name": "Boost time remaining"
+      },
+      "detected": {
+        "name": "Salt cell",
+        "state": {
+          "detected": "Detected",
+          "not_detected": "Not detected",
+          "controller_offline": "Controller offline"
+        }
+      }
+    },
+    "binary_sensor": {
+      "low_salt": {
+        "name": "Low salt"
+      },
+      "boost_hardware_enabled": {
+        "name": "Boost enabled on hardware"
+      }
+    },
+    "number": {
+      "pool_output_setting": {
+        "name": "Pool output setting"
+      },
+      "spa_output_setting": {
+        "name": "Spa output setting"
+      },
+      "boost_hours": {
+        "name": "Boost duration"
+      }
+    },
+    "switch": {
+      "boost": {
+        "name": "Boost"
+      }
+    }
+  }
+}
